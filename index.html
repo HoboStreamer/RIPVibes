@@ -15,8 +15,29 @@
 
   <canvas id="rain" aria-hidden="true"></canvas>
 
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner container">
+      <a href="#top" class="nav-brand" aria-label="Back to top">
+        <span class="nav-brand-skull">&#9760;</span>
+        <span class="nav-brand-text">RIP&nbsp;VIBES</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#story" class="nav-link">What Happened</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#vision" class="nav-link">Vision</a></li>
+        <li><a href="#next" class="nav-link">What's Next</a></li>
+        <li><a href="#find-me" class="nav-link">Find Me</a></li>
+        <li><a href="#shoutouts" class="nav-link">Shoutouts</a></li>
+        <li><a href="https://alexfrison.net" class="nav-link nav-link-resume" target="_blank" rel="noopener">Resume&nbsp;&rarr;</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- HERO -->
-  <header class="hero">
+  <header class="hero" id="top">
     <div class="hero-inner">
       <p class="hero-eyebrow">openvibe &nbsp;·&nbsp; hobostreamer &nbsp;·&nbsp; hobo.tools &nbsp;·&nbsp; hobo.quest</p>
       <h1 class="glitch" data-text="RIP VIBES">RIP VIBES</h1>
@@ -35,7 +56,7 @@
   <main>
 
     <!-- WHAT HAPPENED -->
-    <section class="section story">
+    <section class="section story" id="story">
       <div class="container">
         <h2 class="section-title"><i class="fa-solid fa-circle-exclamation"></i> what happened</h2>
         <div class="story-text fade-in">
@@ -47,7 +68,7 @@
             <i class="fa-solid fa-triangle-exclamation"></i>
             In May 2026 the math stopped working. Server costs kept climbing while a job search hadn't landed yet. Something had to give — so the servers went offline, the domains redirected here, and I went full-time on finding the next opportunity.
           </p>
-          <p>
+          <p class="story-raw">
             <i class="fa-solid fa-heart-crack"></i>
             The hard part isn't the money. It's doing all of this without anyone noticing. Family that doesn't seem to care. No real support system left. I'm literally selling stuff on eBay to cover food while I look for work. There's no dramatic story behind it — life just quietly stopped showing up, and I kept building anyway because it was the only thing that made sense.
           </p>
@@ -66,7 +87,7 @@
     </section>
 
     <!-- THE PROJECTS -->
-    <section class="section projects">
+    <section class="section projects" id="projects">
       <div class="container">
         <h2 class="section-title"><i class="fa-solid fa-hammer"></i> what was being built</h2>
         <p class="section-sub">these weren't just hobby projects. they were a platform.</p>
@@ -180,7 +201,7 @@
     </section>
 
     <!-- THE VISION -->
-    <section class="section vision">
+    <section class="section vision" id="vision">
       <div class="container">
         <h2 class="section-title"><i class="fa-solid fa-eye"></i> what the vision actually was</h2>
         <div class="vision-grid fade-in">
@@ -233,7 +254,7 @@
     </section>
 
     <!-- WHAT'S NEXT -->
-    <section class="section next">
+    <section class="section next" id="next">
       <div class="container">
         <h2 class="section-title"><i class="fa-solid fa-rocket"></i> what's next</h2>
         <div class="next-text fade-in">
@@ -259,7 +280,7 @@
     </section>
 
     <!-- FIND ME -->
-    <section class="section find-me">
+    <section class="section find-me" id="find-me">
       <div class="container">
         <h2 class="section-title"><i class="fa-solid fa-satellite-dish"></i> where to find me</h2>
         <p class="section-sub">not gone. just broke.</p>
@@ -310,7 +331,7 @@
   </main>
 
   <!-- SHOUTOUTS -->
-  <section class="section shoutouts">
+  <section class="section shoutouts" id="shoutouts">
     <div class="container">
       <h2 class="section-title"><i class="fa-solid fa-hand-peace"></i> shoutouts</h2>
       <p class="shoutouts-lead fade-in">mostly a solo build — but not entirely. a few people showed up with actual PRs and fixes, which meant something.</p>
@@ -345,6 +366,45 @@
       }
     }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
     document.querySelectorAll('.fade-in').forEach(el => _io.observe(el));
+
+    // ── Navbar ──────────────────────────────────────────────
+    const _nav    = document.getElementById('site-nav');
+    const _toggle = document.getElementById('nav-toggle');
+    const _menu   = document.getElementById('nav-links');
+
+    // Scroll-aware background
+    window.addEventListener('scroll', () => {
+      _nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Hamburger toggle
+    _toggle.addEventListener('click', () => {
+      const open = _toggle.classList.toggle('open');
+      _toggle.setAttribute('aria-expanded', String(open));
+      _menu.classList.toggle('open', open);
+    });
+
+    // Close on link click
+    _menu.querySelectorAll('.nav-link').forEach(l => {
+      l.addEventListener('click', () => {
+        _toggle.classList.remove('open');
+        _toggle.setAttribute('aria-expanded', 'false');
+        _menu.classList.remove('open');
+      });
+    });
+
+    // Active section highlight
+    const _sectionEls = document.querySelectorAll('[id]');
+    const _navAnchors = document.querySelectorAll('.nav-link[href^="#"]');
+    const _sio = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) {
+          _navAnchors.forEach(n => n.classList.toggle('active',
+            n.getAttribute('href') === '#' + e.target.id));
+        }
+      }
+    }, { rootMargin: '-15% 0px -75% 0px', threshold: 0 });
+    _sectionEls.forEach(s => _sio.observe(s));
   </script>
 
 </body>

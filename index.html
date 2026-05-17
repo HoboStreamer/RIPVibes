@@ -7,7 +7,7 @@
   <meta name="description" content="The Hobo Network is offline. Here's what it was, what it was becoming, and where to find the guy who built it." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -37,12 +37,26 @@
     <!-- WHAT HAPPENED -->
     <section class="section story">
       <div class="container">
-        <h2 class="section-title">what happened</h2>
-        <div class="story-text">
-          <p>I spent the last few months building a universe of interconnected web apps — from scratch, alone, no team, no funding. Just a steam deck, a desktop, a rented server, and a lot of late nights convincing myself it was worth it.</p>
-          <p>Then life caught up with me all at once. The server bill I can't pay anymore. Family that doesn't seem to notice. No real support system left. I'm literally left having to sell stuff on eBay for food right now while I look for a job.</p>
-          <p>So the servers are going down. The domains are either going dark or redirecting here. But everything I built is open source, still alive on GitHub, and I'm proud as hell of every line.</p>
-          <p>If you're a dev or a company who needs someone who can build all of this alone — <a href="https://alexfrison.net">here's my resume.</a> Let's talk.</p>
+        <h2 class="section-title"><i class="fa-solid fa-circle-exclamation"></i> what happened</h2>
+        <div class="story-text fade-in">
+          <p class="story-lead">
+            <i class="fa-solid fa-microchip"></i>
+            For the past few years, I've been building — no team, no VC, no co-founder. Just a Steam Deck, a desktop, one rented server, and enough stubbornness to ship 15 microservices, a live streaming platform, a browser MMORPG, and an OAuth2 SSO network, all from the same home office.
+          </p>
+          <p>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            In May 2026 the math stopped working. Server costs kept climbing while a job search hadn't landed yet. Something had to give — so the servers went offline, the domains redirected here, and I went full-time on finding the next opportunity.
+          </p>
+          <p>
+            <i class="fa-solid fa-code-branch"></i>
+            None of the code is gone. Every repository is open source, fully documented, and live on GitHub right now. The architecture is real. The systems worked. This page exists because the projects deserve a monument, not a 404.
+          </p>
+          <p class="story-cta">
+            <i class="fa-solid fa-briefcase"></i>
+            If you need an engineer who can architect and ship systems like this solo &mdash;
+            <a href="https://alexfrison.net">here's the resume.</a>
+            I'm available now. Let's talk.
+          </p>
         </div>
       </div>
     </section>
@@ -50,15 +64,15 @@
     <!-- THE PROJECTS -->
     <section class="section projects">
       <div class="container">
-        <h2 class="section-title">what was being built</h2>
+        <h2 class="section-title"><i class="fa-solid fa-hammer"></i> what was being built</h2>
         <p class="section-sub">these weren't just hobby projects. they were a platform.</p>
 
-        <div class="project-grid">
+        <div class="project-grid fade-in">
 
           <!-- OpenVibe — the big one -->
           <article class="project-card card-big">
             <div class="card-tag card-tag-special">the magnum opus</div>
-            <h3>OpenVibe</h3>
+            <h3><i class="fa-solid fa-circle-nodes"></i> OpenVibe</h3>
             <p>
               The final form. A full open-source platform kernel designed to replace everything in the Hobo Network —
               and eventually become a self-hosted alternative to the entire creator economy stack.
@@ -102,7 +116,7 @@
           <!-- HoboStreamer -->
           <article class="project-card card-streamer">
             <div class="card-tag">streaming platform</div>
-            <h3>HoboStreamer.com</h3>
+            <h3><i class="fa-solid fa-tower-broadcast"></i> HoboStreamer.com</h3>
             <p>
               A self-hosted, open-source Twitch. WebRTC SFU via mediasoup, RTMP ingest via OBS,
               JSMPEG relay, WHIP support, FFmpeg-based VOD recording, clips, live DVR,
@@ -117,7 +131,7 @@
           <!-- HoboApp -->
           <article class="project-card">
             <div class="card-tag">tools ecosystem</div>
-            <h3>HoboApp / Hobo Tools</h3>
+            <h3><i class="fa-solid fa-toolbox"></i> HoboApp / Hobo Tools</h3>
             <p>
               The backbone of the Hobo Network. A monorepo of interconnected mini-services:
               hobo-tools (central SSO + OAuth2 identity provider), hobo-img (image processing),
@@ -132,7 +146,7 @@
           <!-- Hobo.Quest -->
           <article class="project-card">
             <div class="card-tag">browser mmo</div>
-            <h3>Hobo.Quest</h3>
+            <h3><i class="fa-solid fa-dungeon"></i> Hobo.Quest</h3>
             <p>
               A real-time 2D browser world. Formerly "2D World". Multiplayer movement,
               slot machines, scratch cards, RobotStreamer live camera integration,
@@ -147,7 +161,7 @@
           <!-- alexfrison.net -->
           <article class="project-card card-resume">
             <div class="card-tag tag-alive">still alive</div>
-            <h3>alexfrison.net</h3>
+            <h3><i class="fa-solid fa-user-tie"></i> alexfrison.net</h3>
             <p>
               The resume. Built with Astro. Statically hosted on GitHub Pages now.
               Because at the end of the day, somebody's gotta see what this guy
@@ -164,8 +178,8 @@
     <!-- THE VISION -->
     <section class="section vision">
       <div class="container">
-        <h2 class="section-title">what the vision actually was</h2>
-        <div class="vision-grid">
+        <h2 class="section-title"><i class="fa-solid fa-eye"></i> what the vision actually was</h2>
+        <div class="vision-grid fade-in">
           <div class="vision-text">
             <p>
               The Hobo Network started as a self-hosted streaming site.
@@ -217,22 +231,25 @@
     <!-- WHAT'S NEXT -->
     <section class="section next">
       <div class="container">
-        <h2 class="section-title">what's next</h2>
-        <div class="next-text">
+        <h2 class="section-title"><i class="fa-solid fa-rocket"></i> what's next</h2>
+        <div class="next-text fade-in">
           <p>
-            Right now I'm job hunting. All of this is on my resume and on GitHub — open source,
-            forever, for anyone to use, fork, learn from, or build on.
-            If you're a company that needs a senior full-stack dev who can architect and ship
-            systems like this solo, I am extremely available.
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Right now I'm job hunting — full time, actively looking. All of this is on my resume and on GitHub, open source forever, for anyone to use, fork, learn from, or build on. If you're a company that needs a senior full-stack engineer who can architect and ship systems like this solo, I'm available right now.
           </p>
           <p>
-            Once I'm back on my feet, the vibes will return. The code isn't going anywhere.
-            The dream isn't dead — it's just sleeping.
+            <i class="fa-solid fa-moon"></i>
+            Once I'm back on my feet, the vibes will return. The code isn't going anywhere. The dream isn't dead &mdash; it's on standby.
           </p>
           <p>
-            In the meantime: join the Discord, follow on Kick, watch the GitHub for activity.
-            Things happen.
+            <i class="fa-solid fa-bolt"></i>
+            In the meantime: join the Discord, follow on Kick, watch the GitHub for activity. Things happen.
           </p>
+          <div class="next-cta">
+            <a href="https://alexfrison.net" class="btn btn-resume btn-cta"><i class="fa-solid fa-user-tie"></i> View Resume</a>
+            <a href="mailto:alex@alexfrison.net" class="btn btn-gh btn-cta"><i class="fa-solid fa-envelope"></i> alex@alexfrison.net</a>
+            <a href="https://www.linkedin.com/in/fris/" class="btn btn-linkedin btn-cta" target="_blank" rel="me noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          </div>
         </div>
       </div>
     </section>
@@ -240,7 +257,7 @@
     <!-- FIND ME -->
     <section class="section find-me">
       <div class="container">
-        <h2 class="section-title">where to find me</h2>
+        <h2 class="section-title"><i class="fa-solid fa-satellite-dish"></i> where to find me</h2>
         <p class="section-sub">not gone. just broke.</p>
         <div class="links-grid">
 
@@ -298,6 +315,15 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="rain.js"></script>
+  <script>
+    // Scroll reveal
+    const _io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); _io.unobserve(e.target); }
+      }
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+    document.querySelectorAll('.fade-in').forEach(el => _io.observe(el));
+  </script>
 
 </body>
 </html>

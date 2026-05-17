@@ -828,6 +828,7 @@ footer {
 .shoutout-handle { font-family: 'Space Mono', monospace; font-size: 0.95rem; color: var(--accent); font-weight: 700; }
 .shoutout-handle a { color: inherit; text-decoration: none; }
 .shoutout-handle a:hover { text-decoration: underline; }
+.shoutout-aka { font-size: 0.72rem; color: var(--text-muted); font-weight: 400; letter-spacing: 0.04em; margin-left: 0.4rem; }
 .shoutout-desc { font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
 
 /* ─── Navbar ──────────────────────────────────────────────── */

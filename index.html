@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIP Vibes — hobostreamer.com / openvibe.live</title>
+  <meta name="description" content="The Hobo Network is offline. Here's what it was, what it was becoming, and where to find the guy who built it." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <canvas id="rain" aria-hidden="true"></canvas>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">openvibe &nbsp;·&nbsp; hobostreamer &nbsp;·&nbsp; hobo.tools &nbsp;·&nbsp; hobo.quest</p>
+      <h1 class="glitch" data-text="RIP VIBES">RIP VIBES</h1>
+      <p class="hero-sub">the lights went out. the server is gone. the code is still here.</p>
+      <p class="hero-date">May 2026</p>
+      <div class="hero-links">
+        <a href="https://discord.gg/M6MuRUaeJj" class="btn btn-discord"><i class="fa-brands fa-discord"></i> Discord</a>
+        <a href="https://kick.com/hobostreamer" class="btn btn-kick"><i class="fa-solid fa-video"></i> Kick</a>
+        <a href="https://github.com/HoboStreamer" class="btn btn-gh"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://alexfrison.net" class="btn btn-resume"><i class="fa-regular fa-file-lines"></i> Resume</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></div>
+  </header>
+
+  <main>
+
+    <!-- WHAT HAPPENED -->
+    <section class="section story">
+      <div class="container">
+        <h2 class="section-title">what happened</h2>
+        <div class="story-text">
+          <p>I spent the last few months building a universe of interconnected web apps — from scratch, alone, no team, no funding. Just a steam deck, a desktop, a rented server, and a lot of late nights convincing myself it was worth it.</p>
+          <p>Then life caught up with me all at once. The server bill I can't pay anymore. Family that doesn't seem to notice. No real support system left. I'm literally left having to sell stuff on eBay for food right now while I look for a job.</p>
+          <p>So the servers are going down. The domains are either going dark or redirecting here. But everything I built is open source, still alive on GitHub, and I'm proud as hell of every line.</p>
+          <p>If you're a dev or a company who needs someone who can build all of this alone — <a href="https://alexfrison.net">here's my resume.</a> Let's talk.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE PROJECTS -->
+    <section class="section projects">
+      <div class="container">
+        <h2 class="section-title">what was being built</h2>
+        <p class="section-sub">these weren't just hobby projects. they were a platform.</p>
+
+        <div class="project-grid">
+
+          <!-- OpenVibe — the big one -->
+          <article class="project-card card-big">
+            <div class="card-tag card-tag-special">the magnum opus</div>
+            <h3>OpenVibe</h3>
+            <p>
+              The final form. A full open-source platform kernel designed to replace everything in the Hobo Network —
+              and eventually become a self-hosted alternative to the entire creator economy stack.
+              16 phases of development. 15+ microservices. One person.
+            </p>
+            <p>
+              Think Restreams + Twitch + YouTube + Forums + Chat + Reddit + Patreon, fully self-hosted, open source, with real architecture:
+              event bus, capability contracts, shared identity, native media infrastructure, AI/search backbone, billing ledger, games surface.
+            </p>
+            <div class="phase-list">
+              <span class="phase done"><i class="fa-solid fa-check"></i> Platform Kernel</span>
+              <span class="phase done"><i class="fa-solid fa-check"></i> Identity / Auth</span>
+              <span class="phase done"><i class="fa-solid fa-check"></i> Media Platform</span>
+              <span class="phase done"><i class="fa-solid fa-check"></i> Live Streaming</span>
+              <span class="phase done"><i class="fa-solid fa-check"></i> Chat &amp; Community</span>
+              <span class="phase done"><i class="fa-solid fa-check"></i> Billing / Tips</span>
+              <span class="phase done"><i class="fa-solid fa-check"></i> AI / Search</span>
+              <span class="phase done"><i class="fa-solid fa-check"></i> Games</span>
+              <span class="phase done"><i class="fa-solid fa-check"></i> Realtime / Workers</span>
+              <span class="phase wip"><i class="fa-solid fa-triangle-exclamation"></i> Runtime Cutover</span>
+              <span class="phase wip"><i class="fa-solid fa-triangle-exclamation"></i> Prod Hardening</span>
+              <span class="phase wip"><i class="fa-solid fa-triangle-exclamation"></i> Scaling Foundation</span>
+            </div>
+            <p class="card-services">
+              <strong>Services:</strong>
+              openvibe-network · openvibe-api · openvibe-control · openvibe-live · openre-stream ·
+              openvibe-media · openvibe-chat · openvibe-community · openvibe-ai · openvibe-content ·
+              openvibe-billing · openvibe-tips · openvibe-games · openvibe-realtime · openvibe-events ·
+              openvibe-workers · openvibe-tools
+            </p>
+            <p class="card-services">
+              <strong>Packages:</strong>
+              openvibe-contracts · openvibe-sdk · openvibe-persistence · openvibe-runtime ·
+              openvibe-queue · openvibe-storage · openvibe-redis · openvibe-realtime ·
+              openvibe-observability · openvibe-icons
+            </p>
+            <p class="card-status status-paused"><i class="fa-solid fa-pause"></i> paused — so close it hurts</p>
+            <a href="https://github.com/HoboStreamer/OpenVibe-Temporary-MonoRepo" class="card-link">view source on github →</a>
+          </article>
+
+          <!-- HoboStreamer -->
+          <article class="project-card card-streamer">
+            <div class="card-tag">streaming platform</div>
+            <h3>HoboStreamer.com</h3>
+            <p>
+              A self-hosted, open-source Twitch. WebRTC SFU via mediasoup, RTMP ingest via OBS,
+              JSMPEG relay, WHIP support, FFmpeg-based VOD recording, clips, live DVR,
+              full chat with moderation, bans, purges, custom emotes, tips,
+              Hobo Bucks economy, stream overlays, viewer analytics, API tokens for bots.
+            </p>
+            <p>Built on Node.js + SQLite + FFmpeg. The original. The one that started everything.</p>
+            <p class="card-status status-rip"><i class="fa-solid fa-bolt"></i> online until the server goes down</p>
+            <a href="https://github.com/HoboStreamer/HoboStreamer.com" class="card-link">view source on github →</a>
+          </article>
+
+          <!-- HoboApp -->
+          <article class="project-card">
+            <div class="card-tag">tools ecosystem</div>
+            <h3>HoboApp / Hobo Tools</h3>
+            <p>
+              The backbone of the Hobo Network. A monorepo of interconnected mini-services:
+              hobo-tools (central SSO + OAuth2 identity provider), hobo-img (image processing),
+              hobo-maps, hobo-audio, hobo-docs, hobo-text, hobo-food, hobo-yt.
+              All talking to each other through shared auth and a service registry.
+              The glue holding everything together.
+            </p>
+            <p class="card-status status-rip"><i class="fa-solid fa-box"></i> offline</p>
+            <a href="https://github.com/HoboStreamer/HoboApp" class="card-link">view source on github →</a>
+          </article>
+
+          <!-- Hobo.Quest -->
+          <article class="project-card">
+            <div class="card-tag">browser mmo</div>
+            <h3>Hobo.Quest</h3>
+            <p>
+              A real-time 2D browser world. Formerly "2D World". Multiplayer movement,
+              slot machines, scratch cards, RobotStreamer live camera integration,
+              socket-based game logic, custom client compiler.
+              The weird, chaotic, fun corner of the network where nothing made sense
+              and everything was somehow alive.
+            </p>
+            <p class="card-status status-rip"><i class="fa-solid fa-gamepad"></i> servers offline</p>
+            <a href="https://github.com/HoboStreamer/www.Hobo.Quest" class="card-link">view source on github →</a>
+          </article>
+
+          <!-- alexfrison.net -->
+          <article class="project-card card-resume">
+            <div class="card-tag tag-alive">still alive</div>
+            <h3>alexfrison.net</h3>
+            <p>
+              The resume. Built with Astro. Statically hosted on GitHub Pages now.
+              Because at the end of the day, somebody's gotta see what this guy
+              is capable of and give him a job before he loses his mind.
+            </p>
+            <p class="card-status status-ok"><i class="fa-solid fa-circle-check"></i> live on github pages</p>
+            <a href="https://alexfrison.net" class="card-link">visit →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- THE VISION -->
+    <section class="section vision">
+      <div class="container">
+        <h2 class="section-title">what the vision actually was</h2>
+        <div class="vision-grid">
+          <div class="vision-text">
+            <p>
+              The Hobo Network started as a self-hosted streaming site.
+              Then it grew into an SSO layer. Then a suite of tools.
+              Then a 2D multiplayer world. Then a full content platform.
+            </p>
+            <p>
+              OpenVibe was the synthesis — a proper platform kernel with shared identity,
+              capability-based service contracts, a distributed event bus, native media infrastructure,
+              and a real billing layer. Not a hack job. Real software architecture, built from scratch,
+              solo, in parallel with keeping the legacy Hobo services alive and integrated.
+            </p>
+            <p>
+              It made it through 16~ phases of documented development. The migration tooling was built.
+              The data maps were written. The cutover runbook existed. It was almost ready.
+            </p>
+            <p class="vision-kicker">"The code doesn't lie. Go look at it."</p>
+          </div>
+          <div class="vision-stats">
+            <div class="stat">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">microservices</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10</span>
+              <span class="stat-label">shared packages</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">16</span>
+              <span class="stat-label">dev phases</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1</span>
+              <span class="stat-label">developer</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">$0</span>
+              <span class="stat-label">funding</span>
+            </div>
+            <div class="stat stat-rip">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">late nights</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S NEXT -->
+    <section class="section next">
+      <div class="container">
+        <h2 class="section-title">what's next</h2>
+        <div class="next-text">
+          <p>
+            Right now I'm job hunting. All of this is on my resume and on GitHub — open source,
+            forever, for anyone to use, fork, learn from, or build on.
+            If you're a company that needs a senior full-stack dev who can architect and ship
+            systems like this solo, I am extremely available.
+          </p>
+          <p>
+            Once I'm back on my feet, the vibes will return. The code isn't going anywhere.
+            The dream isn't dead — it's just sleeping.
+          </p>
+          <p>
+            In the meantime: join the Discord, follow on Kick, watch the GitHub for activity.
+            Things happen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIND ME -->
+    <section class="section find-me">
+      <div class="container">
+        <h2 class="section-title">where to find me</h2>
+        <p class="section-sub">not gone. just broke.</p>
+        <div class="links-grid">
+
+          <a href="https://discord.gg/M6MuRUaeJj" class="link-card link-discord">
+            <span class="link-icon"><i class="fa-brands fa-discord"></i></span>
+            <span class="link-name">Discord</span>
+            <span class="link-desc">Join the server. Stay up to date. Say hi. It gets lonely.</span>
+          </a>
+
+          <a href="https://kick.com/hobostreamer" class="link-card link-kick">
+            <span class="link-icon"><i class="fa-solid fa-video"></i></span>
+            <span class="link-name">Kick</span>
+            <span class="link-desc">I still stream when I can. Follow to see what's up.</span>
+          </a>
+
+          <a href="https://github.com/HoboStreamer" class="link-card link-github">
+            <span class="link-icon"><i class="fa-brands fa-github"></i></span>
+            <span class="link-name">GitHub</span>
+            <span class="link-desc">All the code. All of it. Open source. Take it, use it, build on it.</span>
+          </a>
+
+          <a href="https://alexfrison.net" class="link-card link-resume">
+            <span class="link-icon"><i class="fa-regular fa-file-lines"></i></span>
+            <span class="link-name">Resume</span>
+            <span class="link-desc">I need a job. If you know someone, or you're someone — let's talk.</span>
+          </a>
+
+        </div>
+
+        <div class="open-source-note">
+          <p>
+            All source code is publicly available on GitHub under the
+            <a href="https://github.com/HoboStreamer">HoboStreamer</a> org.
+          </p>
+          <div class="repo-list">
+            <a href="https://github.com/HoboStreamer/OpenVibe-Temporary-MonoRepo" class="repo-link">OpenVibe-Temporary-MonoRepo</a>
+            <a href="https://github.com/HoboStreamer/HoboStreamer.com" class="repo-link">HoboStreamer.com</a>
+            <a href="https://github.com/HoboStreamer/HoboApp" class="repo-link">HoboApp</a>
+            <a href="https://github.com/HoboStreamer/www.Hobo.Quest" class="repo-link">Hobo.Quest</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-main">all code is open source. all vibes are dead. for now.</p>
+      <p class="footer-sub">built alone. paused by circumstance. not abandoned in spirit.</p>
+      <p class="footer-copy">© 2024–2026 Alex Frison / HoboStreamer</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="rain.js"></script>
+
+</body>
+</html>
